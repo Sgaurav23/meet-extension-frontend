@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "MeetBrief",
+  "version": "1.1.0",
+  "description": "Capture Google Meet audio and create multilingual meeting recaps.",
+  "permissions": [
+    "storage",
+    "tabs",
+    "activeTab",
+    "tabCapture",
+    "offscreen"
+  ],
+  "minimum_chrome_version": "116",
+  "host_permissions": [
+    "https://meet.google.com/*",
+    "http://localhost:8080/*"
+  ],
+  "action": {
+    "default_title": "Open MeetBrief",
+    "default_popup": "index.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
